@@ -1,7 +1,4 @@
 🌫️ STRATOSENSE-APP
-
-⚠️ Note: This system is under active development. It is not intended for medical or regulatory-grade environmental decision-making.
-
 A full-stack web application for real-time air quality monitoring, AQI forecasting, and personalized health alerts. STRATOSENSE-APP integrates a Decision Tree ML model with FastAPI and a React-based frontend to help users track air quality trends, understand pollutant behavior, and receive automated health advisories based on risk levels.
 
 🔍 Key Features
@@ -116,7 +113,3 @@ Email: gunthala_ramya@gmail.com
 
 GitHub: https://github.com/gramya125
 
-⚠️ Disclaimer
-
-STRATOSENSE-APP is a research and educational project.
-It is not intended for certified environmental monitoring, health diagnostics, or emergency decision-making. Always refer to official pollution control boards and authorized meteorological departments for validated air-quality data.
