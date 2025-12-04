@@ -1,106 +1,122 @@
 🌫️ STRATOSENSE-APP
-Real-Time Air Quality Monitoring, Forecasting & Personalized Health Alerts
 
-STRATOSENSE-APP is a full-stack web application designed to help users track, analyze, and forecast air quality using interactive dashboards and machine learning.
-It combines real-time environmental data, AQI forecasting, and health risk alerts to make air-quality insights accessible, actionable, and easy to understand.
+⚠️ Note: This system is under active development. It is not intended for medical or regulatory-grade environmental decision-making.
 
-🚀 Features
-🔴 Real-Time Environmental Monitoring
+A full-stack web application for real-time air quality monitoring, AQI forecasting, and personalized health alerts. STRATOSENSE-APP integrates a Decision Tree ML model with FastAPI and a React-based frontend to help users track air quality trends, understand pollutant behavior, and receive automated health advisories based on risk levels.
 
-Live AQI values updated dynamically
+🔍 Key Features
 
-Individual pollutant metrics (PM2.5, PM10, CO, NO₂, etc.)
+Real-Time AQI Monitoring – Live air quality index and pollutant data visualization
 
-Geographic heatmaps for region-wise comparison
+AI-Based AQI Forecasting – Decision Tree ML model predicts short-term air quality
 
-📈 AI-Powered Forecasting
+Health Alert Engine – Automated warnings when pollution levels reach hazardous zones
 
-Decision Tree ML model predicts near-future AQI levels
+Geographic Heatmaps – Region-wise AQI visualization
 
-Supports proactive decision-making and awareness
+Interactive Dashboard – Clean and responsive UI for smooth data exploration
 
-⚕️ Personalized Health Alerts
+Full-Stack Integration – FastAPI backend + React/TypeScript frontend
 
-Automatic warnings when air quality becomes hazardous
+📌 Architecture
 
-Preventive recommendations based on risk category
+Environmental Data
+    ↓
+FastAPI Backend → Data Processing + ML Forecast
+    ↓
+Decision Tree Model → AQI Prediction
+    ↓
+React Dashboard → Charts, Heatmaps, Alerts
 
-Useful for children, elderly, and sensitive groups
-
-📊 Interactive Visualization Dashboard
-
-Fully responsive UI
-
-Clean charts, trend analysis, and pollutant patterns
-
-Smooth data exploration experience
-
-🧠 Tech Stack
-Component	Technology
-Frontend	React • TypeScript • Vite • Tailwind CSS • Chart.js
-Backend	Python • FastAPI
-ML Model	Decision Tree (scikit-learn)
-Package Managers	npm (frontend) • pip (backend)
-Linting	ESLint
-📂 Project Structure
+🗂️ Project Structure
 STRATOSENSE-APP/
-├── public/             # Static assets
-├── src/                # React components & frontend logic
-├── server/             # FastAPI backend + endpoints
-├── models/             # ML models and training scripts
-├── package.json        # Frontend dependencies
-├── requirements.txt    # Backend dependencies
+├── public/                 # Static frontend assets
+├── src/                    # React components & UI logic
+│   ├── components/
+│   ├── pages/
+│   └── utils/
+├── server/                 # FastAPI backend
+│   ├── main.py
+│   ├── routes/
+│   └── ml_engine/
+├── models/                 # ML model scripts & trained models
+│   └── decision_tree.pkl
+├── package.json            # Frontend dependencies
+├── requirements.txt        # Backend dependencies
 └── README.md
 
-⚙️ Setup Instructions
-Frontend Setup
+⚙️ Quick Start
+🔧 Prerequisites
+
+Node.js + npm
+
+Python 3.8+
+
+pip package manager
+
+📥 Installation
+1️⃣ Clone the Repository
+git clone https://github.com/gramya125/STRATOSENSE-APP.git
+cd STRATOSENSE-APP
+
+2️⃣ Frontend Setup
 npm install
 npm run dev
 
-Backend Setup
+3️⃣ Backend Setup
 python -m venv venv
 source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn server.main:app --reload
 
-🌍 Usage
+🚀 Usage
 
 Visit the live dashboard:
+
 🔗 https://strato-sable.vercel.app/
 
-Use STRATOSENSE-APP to:
+STRATOSENSE-APP allows users to:
 
-View real-time air quality
+View real-time AQI levels
 
 Explore pollutant trends
 
-Understand AQI history
+Understand historic AQI patterns
 
-Receive forecasts for upcoming conditions
+Receive AI-generated AQI forecasts
 
-Get automated health notifications when levels worsen
+Get automated health notifications when air quality worsens
 
-🤝 Contributing
+🛠 Requirements
+fastapi
+uvicorn
+scikit-learn
+pandas
+numpy
+python-multipart
+requests
 
-Contributions are welcome!
+# Frontend
+react
+typescript
+vite
+chart.js
+tailwindcss
 
-Fork the repository
-
-Create your feature branch
-
-Make your changes
-
-Run:
-
-npm run lint
-
-
-Submit a pull request
-
-📜 License
+📄 License
 
 This project is licensed under the MIT License.
+See the LICENSE
+ file for more information.
 
-💡 About STRATOSENSE
+📬 Contact
 
-STRATOSENSE-APP delivers clear, data-driven, and actionable air-quality insights through a blend of environmental analytics, machine learning, and intuitive design — empowering users to make informed lifestyle and health decisions.
+Author: Gunthala Ramya
+Email: gunthala_ramya@gmail.com
+
+GitHub: https://github.com/gramya125
+
+⚠️ Disclaimer
+
+STRATOSENSE-APP is a research and educational project.
+It is not intended for certified environmental monitoring, health diagnostics, or emergency decision-making. Always refer to official pollution control boards and authorized meteorological departments for validated air-quality data.
