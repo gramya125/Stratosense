@@ -1,73 +1,107 @@
-# Welcome to your Lovable project
+STRATOSENSE-APP
+A web application for real-time air quality monitoring, forecasting, and health alerts. It integrates data visualization, machine learning, and responsive UI to help users track and predict air quality trends.
 
-## Project info
+Features
+Live AQI, pollutant metrics, and charts with geographic heatmaps
 
-**URL**: https://lovable.dev/projects/2c7575ed-111d-4d0b-91c5-8f86068b31ef
+Forecasting powered by Decision Tree machine learning
 
-## How can I edit this code?
+Automated health alerts when air quality becomes hazardous
 
-There are several ways of editing your application.
+Intuitive dashboard for data exploration
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/2c7575ed-111d-4d0b-91c5-8f86068b31ef) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Technology Stack
+Component	Technology
+Frontend	React, TypeScript, Vite, Tailwind CSS, Chart.js
+Backend	Python, FastAPI
+ML Model	Decision Tree (scikit-learn)
+Linting	ESLint
+Packages	npm (frontend), pip (backend)
+Structure
+text
+STRATOSENSE-APP/
+├── public/           # Static files
+├── src/              # React code
+├── server/           # Python API + ML
+├── models/           # ML scripts/models
+├── package.json      # Frontend dependencies
+├── requirements.txt  # Backend dependencies
+└── README.md
+Setup
+Frontend
+text
+npm install
 npm run dev
-```
+Backend
+text
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn server.main:app --reload
+Usage
+Open http://localhost:5173 to view the dashboard, explore air quality data, receive forecasts, and monitor alerts.
 
-**Edit a file directly in GitHub**
+Contributing
+Fork the repository
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Make your changes
 
-**Use GitHub Codespaces**
+Submit a pull request
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Run npm run lint before submitting
 
-## What technologies are used for this project?
+License
+MIT License
 
-This project is built with:
+STRATOSENSE-APP helps users monitor and react to air quality changes with simplicity and accuracy.# STRATOSENSE-APP
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+STRATOSENSE-APP is a web application for air quality monitoring, forecasting, and health alerts. It features real-time dashboards with predictive analytics and interactive charts, powered by a machine learning Decision Tree model.
 
-## How can I deploy this project?
+Features
+Real-time AQI, pollutant tracking, and heatmaps
 
-Simply open [Lovable](https://lovable.dev/projects/2c7575ed-111d-4d0b-91c5-8f86068b31ef) and click on Share -> Publish.
+Forecasting with Decision Tree ML model
 
-## Can I connect a custom domain to my Lovable project?
+Automated health alerts
 
-Yes, you can!
+Interactive dashboard interface
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Tech Stack
+Component	Tech Stack
+Frontend	React, TypeScript, Vite, Tailwind CSS, Chart.js
+Backend	Python (FastAPI)
+ML Model	Decision Tree (scikit-learn)
+Packages	npm (frontend), pip (backend)
+Linting	ESLint
+Project Structure
+text
+STRATOSENSE-APP/
+  ├─ public/
+  ├─ src/
+  ├─ server/
+  ├─ models/
+  ├─ package.json
+  ├─ requirements.txt
+  └─ README.md
+Setup
+Frontend
+text
+npm install
+npm run dev
+Backend
+text
+python -m venv venv
+source venv/bin/activate    # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn server.main:app --reload
+Usage
+Visit https://strato-sable.vercel.app/ for the dashboard, live air quality, forecasts, and health alerts.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+Contributing
+Pull requests welcome. Please run npm run lint before submitting.
+
+License
+MIT License
+
+STRATOSENSE-APP delivers clear, actionable air quality insights for everyone.
